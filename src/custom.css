@@ -1,0 +1,12 @@
+.avatar-group .avatar {
+    overflow: hidden;
+    border-radius: 9999px;
+    border-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: #fff;
+  }
+
+  .select:focus {
+    outline: 2px solid hsla(var(--bc) / 0.2);
+    outline-offset: 0px;
+  }
