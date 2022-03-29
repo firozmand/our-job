@@ -1,12 +1,43 @@
 .avatar-group .avatar {
-    overflow: hidden;
-    border-radius: 9999px;
-    border-width: 4px;
-    --tw-border-opacity: 1;
-    border-color: #fff;
-  }
+  overflow: hidden;
+  border-radius: 9999px;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: #fff;
+}
 
-  .select:focus {
-    outline: 2px solid hsla(var(--bc) / 0.2);
-    outline-offset: 0px;
-  }
+.select:focus {
+  outline: 0px solid hsla(var(--bc) / 0.2);
+  outline-offset: 0px;
+}
+
+.swiper-slide {
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+}
+
+.btn:active:hover,
+.btn:active:focus {
+  transform: none !important;
+}
+.yoyo {
+
+  left: -6% !important;
+  width: 100%;
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: red !important;
+  outline-style: double;
+  outline-color: red;
+  background-size: 1px !important;
+
+}
+
+.cus{
+  width: 600px !important;
+}
