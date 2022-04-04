@@ -92,28 +92,34 @@
           <h1 class="font-bold md:text-7xl text-5xl md:text-left text-center tracking-wider text-black  leading-loose">
             Find Every <span class=" bg-[url('src/photo/bgtxt.png')] bg-cover bg-bottom px-3">Jobs</span> In One
             Platform</h1>
-          <div class=" mt-10 w-5/6">
-   
-            <div
-              class=" flex input input-bordered input-sm w-full h-14 bg-white shadow-lg place-items-center min-w-fit border-0 ">
-              <select class="select   bg-white w-24 md:w-40 ">
-                <option class="text-gray-500">Job / Position</option>
-                <option>Normal Orange</option>
-                <option>Normal Tomato</option>
-              </select>
+          <div class=" mt-10 w-5/6  ">
+                        <div class=" flex input input-bordered justify-between input-sm w-full h-14 bg-white shadow-lg place-items-center min-w-fit border-0 ">
+                      <div class="flex flex-row   ">
+                          
+                          <select class="select   bg-white w-24 md:w-40 ">
+                            <option class="text-gray-500">Job / Position</option>
+                            <option>Normal Orange</option>
+                            <option>Normal Tomato</option>
+                          </select>
+                      
+                          <h1 class="opacity-75">|</h1>
+                      
+                          <select class="select  bg-white  w-32 border-0">
+                            <option class="text-gray-500">Location</option>
+                            <option>Normal Orange</option>
+                            <option>Normal Tomato</option>
+                          </select>
+                      </div>
 
-              <h1 class="opacity-75">|</h1>
 
-              <select class="select  bg-white  w-32 border-0">
-                <option class="text-gray-500">Location</option>
-                <option>Normal Orange</option>
-                <option>Normal Tomato</option>
-              </select>
+              <div class="flex flex-row w-2/6  justify-end items-end">
+                <button class="  btn  text-gray-100 normal-case border-0 bg-green-500  ">Serach</button>
+              </div>
 
-              <button
-              class="  btn  text-gray-100 normal-case border-0 bg-green-500 md:mr-11 mr-10 ">Serach</button>
+              </div>
             </div>
-          </div>
+           
+            
 
           <div class=" mt-5 w-4/5">
             <h3 class="text-red-600 font-medium  text-sm inline-block align-text-top ">Recent Serach : </h3>
@@ -540,7 +546,7 @@
 
   <!-- sec 2 -->
   <!-- rigth side mobile-->
-  <section class="md:hidden w-full   h-screen bg-[#FCFCFC] flex flex-col justify-start items-start">
+  <section class="md:hidden w-full    bg-[#FCFCFC] flex flex-col justify-start items-start">
     <div class="w-full flex flex-row max-w-7xl justify-center items-center ">
 
       <div class="flex flex-col justify-center items-center   w-full  p-1 ">
@@ -621,7 +627,7 @@
 
     </div>
   </section>
-  <section class=" w-full   h-screen bg-[#FCFCFC] flex flex-col justify-start md:justify-around items-center">
+  <section class=" w-full     flex flex-col justify-center  md:justify-around items-center mt-20">
     <div class="w-full flex flex-row  max-w-7xl justify-center items-center ">
       <!-- left side-->
       <div class="flex flex-col md:w-1/2  w-full p-1 relative "><img class=" relative " src="src/photo/sec2bg.png"
@@ -813,10 +819,10 @@
       
       <!-- middling-->
       <!-- Swiper -->
-      <div class="flex flex-col w-screen justify-end items-end">
+      <div class="flex flex-col w-screen justify-end items-end swiper1">
         <div class="  w-5/6 h-96  flex flex-row items-start justify-start  ">
       <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper1">
       <div class="swiper-wrapper">
 
 
@@ -1095,13 +1101,59 @@
 
         
       </div>
+      
       <div class="hidden  md:flex flex-row justify-center items-center swiper-pagination yoyo"></div>
-      <div class="flex md:hidden flex-row justify-center items-center swiper-pagination "></div>
+      <div class="flex md:hidden flex-row justify-center items-center swiper-pagination yoyo2 "></div>
 
 
     </div>
 
         </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 2,
+            spaceBetween: 100,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+             centeredSlides: true,
+      
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 10,
+             centeredSlides: true,
+      
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                
+              },
+              "@1.50": {
+                slidesPerView: 4,
+                spaceBetween: 10,
+              },
+            },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+              mousewheel: true,
+              keyboard: true,
+          });
+        </script>
       </div>
 
 
@@ -1115,111 +1167,152 @@
 
   <section class=" w-full  flex flex-col justify-center items-center ">
     <div class=" w-full  flex flex-row max-w-7xl justify-center items-center ">
-
-
+  
+  
       <!--left side-->
-<div class="flex flex-col justify-center  items-center  w-1/2">
-  
-  
-   <!-- Swiper -->
-   <div class="swiper mySwiper bg-black">
-    <div class="swiper-wrapper cus ">
-           <!-- slid-->
-           <div class="swiper-slide rounded-xl flex flex-col">
-            <div class="flex flex-col p-4 justify-center items-center   w-64 my-10 bg-white shadow-xl rounded-md ">
-              <div class="w-full flex flex-row justify-between items-center">
-                <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">Digital Marketing</h1>
-                <p class="text-gray-400 text-xs">13h ago</p>
-              </div>
-          
-              <div class="flex flex-wrap ">
-                <h1 class="text-black font-bold my-3 text-lg"> Associate Product Marketing
-  
-                  Consumer Marketing </h1>
-              </div>
-          
-              <div class="flex justify-start  flex-row w-full mb-5">
-          
-                <div class="text-gray-400 text-xs font-semibold "> <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg> Part Time</div>
-                <div class="text-gray-400 text-xs font-semibold pl-3 "> 
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg> Tokyo , jopan</div>
-              </div>
-              <div class="w-full flex flex-row justify-between items-center m-3">
-                <div class=""><d class=" flex flex-row w-full justify-center items-center"> <div class=" mr-2 w-8 h-8 rounded-full bg-orange-500 inline-block"></div > <p class="text-sm  text-black font-semibold">umasta</p></d></div>
-              <div class=" w-full flex flex-row  justify-end items-center"> <p class=" text-sm text-green-500 font-semibold  inline-block"> Apply Now <div class="w-8 h-8 bg-green-500 rounded-md ml-2 flex flex-row items-center justify-center"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 text-white w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg></div></p></div>
-                
-              </div>
+      <div class="flex flex-col justify-center  items-center   h-64 w-full p-2  md:p-0  md:w-1/2">
+          <img src="src/photo/sec4bg.png" alt="" class="bg-cover  w-1/2 blur-sm flex md:hidden absolute">
+          <!-- Swiper -->
+        <div class="swiper swiperedition sec-swiper  w-full h-full    ">
+          <div class="swiper-wrapper    ">
+            <div class="swiper-slide h-96 ">
+              <h1 class="md:text-xl text-base font-semibold text-center md:text-left  text-black">"I've downloaded Chakri from my Google
+                Play about 1 years ago. Chakri make the
+                prototyping process so easy and faster. I
+                feel this is the best apps for Prototyping use"
+                <span class="text-sm pt-5 font-semibold text-center md:text-left text-gray-700 inline-block">-Ferdinand Stindl - Co Founder of Cocollay Company</span>
+              </h1>
             </div>
-    </div>
-
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  </div>
-<!--svg-->
-<div class="flex flex-col justify-center items-center  w-2/6">
-  <img src="src/photo/sec4bg.png" alt="" class="bg-cover">
-</div>
+            <div class="swiper-slide h-96 ">
+              <h1 class="md:text-xl text-base font-semibold text-center md:text-left  text-black">"I've downloaded Chakri from my Google
+                Play about 1 years ago. Chakri make the
+                prototyping process so easy and faster. I
+                feel this is the best apps for Prototyping use"
+                <span class="text-sm pt-5 font-semibold text-center md:text-left text-gray-700 inline-block">-Ferdinand Stindl - Co Founder of Cocollay Company</span>
+              </h1>
+            </div>
+            <div class="swiper-slide h-96 ">
+              <h1 class="md:text-xl text-base font-semibold text-center md:text-left  text-black max-w-md">"I've downloaded Chakri from my Google
+                Play about 1 years ago. Chakri make the
+                prototyping process so easy and faster. I
+                feel this is the best apps for Prototyping use"
+                <span class="text-sm pt-5 font-semibold text-center md:text-left text-gray-700 inline-block">-Ferdinand Stindl - Co Founder of Cocollay Company</span>
+              
+              </h1>
+            </div>
       
-
-
+          </div>
+          <div class="swiper-button-next "></div>
+          <div class="swiper-button-prev "></div>
+        </div>
+      </div>
+  
+        <!--svg-->
+        <div class="flex flex-col justify-center items-center   md:w-2/6">
+          <img src="src/photo/sec4bg.png" alt="" class="bg-cover">
+        </div>
+  
     </div>
+  
   </section>
 
   <!--E sec 4-->
 
+  <!-- sec 5-->
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <section class=" w-full  flex flex-col justify-center items-center   ">
+    
+    <div class=" w-full  flex flex-col md:flex-row max-w-7xl justify-start items-start my-7 md:my-44 ">
+      <div class="flex flex-col w-full md:w-1/2  p-10 md:p-10 "> <img src="src/photo/map.png" alt=""></div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      spaceBetween: 100,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        "@0.00": {
-          slidesPerView: 1,
-          spaceBetween: 10,
-       centeredSlides: true,
 
-        },
-        "@0.75": {
-          slidesPerView: 2,
-          spaceBetween: 10,
-       centeredSlides: true,
+      <div class="flex flex-col justify-start items-center md:items-start w-full md:w-1/2  p-5"> 
+        <h1 class="text-black text-4xl font-bold pb-5 md:text-left text-center">20k+ Job Seeker Find their Job Arround the <span class=" bg-[url('src/photo/bgtxt.png')] bg-cover">World</span> </h1>
+        <p class="md:text-left text-center ">Itinsely Duntermed ate economically sound process
+          Improvantrits affic mant positioning vortale Profusionally scale cross functineal hilmar capital and extensive
+          technology Autho otech erable stand-alone initiativ</p>
+            <div class="btn mb-2 flex mt-5 bg-green-500 border-0 text-white w-32 capitalize hover:bg-transparent hover:border-2 hover:border-green-500 hover:text-green-500">
+              Find Your Jobs</div>
+      </div>
 
-        },
-        "@1.00": {
-          slidesPerView: 3,
-          spaceBetween: 10,
-          
-        },
-        "@1.50": {
-          slidesPerView: 4,
-          spaceBetween: 10,
-        },
-      },
+    </div>
+  </section>
+  <!--E sec 5-->
+  
+  <!--  sec 6-->
+
+  <footer class=" w-full  flex flex-col justify-center items-center    ">
+    
+    <div class=" w-full  flex flex-col justify-end items-center ">
+
+      <!-- sub footer-->
+      
+      <div class="flex md:flex-row flex-col justify-center items-center w-4/6 py-20 my-32 rounded-md bg-[#F2F5FB]">
+        <div class="flex flex-col w-1/2 justify-center text-center md:text-left items-center"><h1 class="text-2xl font-bold text-black"> <span class="bg-[url('src/photo/bgtxt.png')] bg-cover">Subscribe</span>  Now for Get <br>
+          Special Features!</h1></div>
+
+
+        <div class="flex flex-col w-1/2 justify-center items-center ">
+          <div class="btn mb-2 flex mt-5 bg-[#FF761E] border-0 text-white w-32 capitalize hover:bg-transparent hover:border-2 hover:border-[#FF761E] hover:text-[#FF761E]">
+          Find Your Jobs</div></div>
+      </div>
+
+      <!-- mane footer-->
+<div class="  w-full flex justify-center bg-white items-center ">
+  <footer class="footer  p-10 max-w-7xl text-base-content">
+    <div>
+      <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current text-black"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
+      <p class="text-black">ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
+    </div> 
+    <div>
+      <span class="footer-title text-black">Services</span> 
+      <a class="link link-hover text-black">Branding</a> 
+      <a class="link link-hover text-black">Design</a> 
+      <a class="link link-hover text-black">Marketing</a> 
+      <a class="link link-hover text-black">Advertisement</a>
+    </div> 
+    <div>
+      <span class="footer-title text-black">Company</span> 
+      <a class="link link-hover text-black">About us</a> 
+      <a class="link link-hover text-black">Contact</a> 
+      <a class="link link-hover text-black">Jobs</a> 
+      <a class="link link-hover text-black">Press kit</a>
+    </div> 
+    <div>
+      <span class="footer-title text-black" >Legal</span> 
+      <a class="link link-hover text-black" >Terms of use</a> 
+      <a class="link link-hover text-black" >Privacy policy</a> 
+      <a class="link link-hover text-black" >Cookie policy</a>
+    </div>
+  </footer>
+</div>
+
+
+    </div>
+
+  </footer>
+
+  <!--E sec 6-->
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".sec-swiper", {
+        cssMode: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-
-    });
-  </script>
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
 </body>
 
 </html>
