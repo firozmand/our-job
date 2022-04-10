@@ -15,7 +15,7 @@
 <body class="w-screen overflow-x-hidden  bg-white ">
 
   <!-- sec header -->
-  <div class=" absolute flex flex-wrap   w-screen h-1/2   ">
+  <div class=" absolute flex flex-wrap   w-screen    ">
     <section class=" flex flex-wrap w-screen justify-center items-start  ">
       <div class="navbar w-full max-w-7xl ">
         <div class=" flex flex-row w-full justify-between items-center ">
@@ -84,7 +84,7 @@
 
   <!-- sec header -->
   <section class=" w-full flex flex-col justify-center items-center">
-    <div class="flex flex-wrap max-w-7xl  h-screen w-full  md:items-end justify-center  ">
+    <div class="flex flex-wrap max-w-7xl  h-screen w-full  md:items-center justify-center  ">
 
       <section class="flex flex-wrap w-screen max-w-7xl justify-center items-center pt-3     ">
         <div
@@ -801,17 +801,19 @@
 
 
   <!-- sec 3-->
-  <section class=" w-full h-screen    flex flex-col justify-center items-center ">
+  <section class=" w-full  my-36  flex flex-col justify-end items-end 2xl:items-center  ">
+    <div class="w-full flex flex-row  max-w-[1366px] justify-center items-center overflow-hidden relative ">
+
     <img src="src/photo/sec3bg.png" class="bg-cover w-full  absolute z-0" alt="">
-    <div class=" w-full  flex flex-col    max-w-7xl justify-center items-center ">
+    <div class=" w-full  flex flex-col justify-center items-center md:justify-start md:items-start  ">
       <!-- toping-->
-      <div class="w-full flex flex-row  justify-between items-center ">
+      <div class="w-full flex flex-row  justify-end items-end ">
         <h1 class=" capitalize font-semibold text-3xl text-center md:text-left text-black z-10 md:ml-52 w-full">some <span
             class=" bg-[url('src/photo/bgtxt.png')] bg-cover bg-bottom px-3 max-w-xs ">popular</span> <br> jobs for you<span class=" text-xs text-blue-600 font-bold  md:hidden ">See More...</span>
         </h1>
         <div class="">
           <div
-            class="btn hidden md:flex bg-green-500 border-0 text-white w-32 capitalize hover:bg-transparent hover:border-2 hover:border-green-500 hover:text-green-500">
+            class="btn hidden md:flex bg-green-500 border-0 text-white w-32 capitalize hover:bg-transparent hover:border-2 mr-2 hover:border-green-500 hover:text-green-500">
             view all jobs</div>
         </div>
       </div>
@@ -819,17 +821,17 @@
       
       <!-- middling-->
       <!-- Swiper -->
-      <div class="flex flex-col w-screen justify-end items-end swiper1">
-        <div class="  w-5/6 h-96  flex flex-row items-start justify-start  ">
+      <div class="flex w-64 flex-col  md:w-screen md:justify-end md:items-end items-center swiper1">
+        <div class=" w-full  md:w-5/6 h-96  flex flex-row items-center justify-center  ">
       <!-- Swiper -->
-    <div class="swiper mySwiper1">
+    <div class="swiper  mySwiper1">
       <div class="swiper-wrapper">
 
 
 
                     <!-- slid-->
                     <div class="swiper-slide rounded-xl flex flex-col">
-                            <div class="flex flex-col p-4 justify-center items-center   w-64 my-10 bg-white shadow-xl rounded-md ">
+                            <div class="flex flex-col p-4 justify-center items-center   w-64 my-10 md: bg-white shadow-xl rounded-md ">
                               <div class="w-full flex flex-row justify-between items-center">
                                 <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">Digital Marketing</h1>
                                 <p class="text-gray-400 text-xs">13h ago</p>
@@ -863,7 +865,7 @@
                     </div>
                     <!-- slid-->
                     <div class="swiper-slide rounded-xl flex flex-col">
-                      <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 bg-white shadow-xl rounded-md ">
+                      <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 md:ml-10 bg-white shadow-xl rounded-md ">
                         <div class="w-full flex flex-row justify-between items-center">
                           <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">Copy Writing</h1>
                           <p class="text-gray-400 text-xs">14h ago</p>
@@ -897,7 +899,7 @@
                     </div>
                     <!-- slid-->
                     <div class="swiper-slide rounded-xl flex flex-col">
-                      <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 bg-white shadow-xl rounded-md ">
+                      <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 md:ml-10 bg-white shadow-xl rounded-md ">
                         <div class="w-full flex flex-row justify-between items-center">
                           <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">UX Design</h1>
                           <p class="text-gray-400 text-xs">13h ago</p>
@@ -929,7 +931,7 @@
                     </div>
                     <!-- slid-->
                     <div class="swiper-slide rounded-xl flex flex-col">
-                      <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 bg-white shadow-xl rounded-md ">
+                      <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 md:ml-10 bg-white shadow-xl rounded-md ">
                         <div class="w-full flex flex-row justify-between items-center">
                           <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">Music</h1>
                           <p class="text-gray-400 text-xs">13h ago</p>
@@ -961,10 +963,9 @@
                         </div>
                       </div>
                     </div>
-
                      <!-- slid-->
                      <div class="swiper-slide rounded-xl flex flex-col">
-                                                <div class="flex flex-col p-4 justify-center items-center   w-64 my-10 bg-white shadow-xl rounded-md ">
+                                                <div class="flex flex-col p-4 justify-center items-center   w-64 my-10 md:ml-10 bg-white shadow-xl rounded-md ">
                                                   <div class="w-full flex flex-row justify-between items-center">
                                                     <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">Digital Marketing</h1>
                                                     <p class="text-gray-400 text-xs">13h ago</p>
@@ -998,7 +999,7 @@
                     </div>
                     <!-- slid-->
                     <div class="swiper-slide rounded-xl flex flex-col">
-                                          <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 bg-white shadow-xl rounded-md ">
+                                          <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 md:ml-10 bg-white shadow-xl rounded-md ">
                                             <div class="w-full flex flex-row justify-between items-center">
                                               <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">Copy Writing</h1>
                                               <p class="text-gray-400 text-xs">14h ago</p>
@@ -1032,7 +1033,7 @@
                     </div>
                     <!-- slid-->
                     <div class="swiper-slide rounded-xl flex flex-col">
-                                          <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 bg-white shadow-xl rounded-md ">
+                                          <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 md:ml-10 bg-white shadow-xl rounded-md ">
                                             <div class="w-full flex flex-row justify-between items-center">
                                               <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">UX Design</h1>
                                               <p class="text-gray-400 text-xs">13h ago</p>
@@ -1064,7 +1065,7 @@
                     </div>
                     <!-- slid-->
                     <div class="swiper-slide rounded-xl flex flex-col">
-                                          <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 bg-white shadow-xl rounded-md ">
+                                          <div class="flex flex-col p-4 justify-center items-center h-64   w-64 my-10 md:ml-10 bg-white shadow-xl rounded-md ">
                                             <div class="w-full flex flex-row justify-between items-center">
                                               <h1 class=" bg-red-100 rounded-lg px-2 text-xs text-red-500 p-1">Music</h1>
                                               <p class="text-gray-400 text-xs">13h ago</p>
@@ -1102,7 +1103,7 @@
         
       </div>
       
-      <div class="hidden  md:flex flex-row justify-center items-center swiper-pagination yoyo"></div>
+      <div class="hidden  md:flex flex-row justify-center items-center swiper-pagination absolute  "></div>
       <div class="flex md:hidden flex-row justify-center items-center swiper-pagination yoyo2 "></div>
 
 
@@ -1114,34 +1115,49 @@
         <!-- Initialize Swiper -->
         <script>
           var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+                    100: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+
+            
+          },
+          640: {
             slidesPerView: 2,
-            spaceBetween: 100,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            breakpoints: {
-              "@0.00": {
-                slidesPerView: 1,
-                spaceBetween: 10,
-             centeredSlides: true,
+            spaceBetween: 20,
+            slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 30,
+            
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1222: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+
+          1366: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          2116: {
+            slidesPerView: 5,
+            spaceBetween: 10
+          },
       
-              },
-              "@0.75": {
-                slidesPerView: 2,
-                spaceBetween: 10,
-             centeredSlides: true,
-      
-              },
-              "@1.00": {
-                slidesPerView: 3,
-                spaceBetween: 10,
-                
-              },
-              "@1.50": {
-                slidesPerView: 4,
-                spaceBetween: 10,
-              },
             },
               navigation: {
                 nextEl: ".swiper-button-next",
@@ -1158,6 +1174,7 @@
 
 
 
+    </div>
     </div>
   </section>
 

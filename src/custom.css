@@ -21,16 +21,20 @@
   display: -webkit-flex;
 
 }
-
+.swiper-slide{
+  position: static !important;
+}
+.swiper-wrapper{
+  position: static !important;
+}
+.swiper{
+  position: static !important;
+}
 .btn:active:hover,
 .btn:active:focus {
   transform: none !important;
 }
-.yoyo {
 
-  left: -7% !important;
-  width: 100% !important;
-}
 .yoyo2 {
 
   bottom: 3px !important;
